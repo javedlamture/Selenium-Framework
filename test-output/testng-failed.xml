@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="Automation.OnlineShopping.reusableTestComponent.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Submit Order Test(failed)">
+    <classes>
+      <class name="Automation.OnlineShopping.test.SubmitOrderTest">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="tearDown"/>
+          <include name="submitOrder" invocation-numbers="0 1"/>
+          <include name="orderHistory"/>
+        </methods>
+      </class> <!-- Automation.OnlineShopping.test.SubmitOrderTest -->
+    </classes>
+  </test> <!-- Submit Order Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
